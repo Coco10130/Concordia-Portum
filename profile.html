@@ -30,22 +30,122 @@
         header{
             text-align: center;
         }
+
+        .container {
+            margin-top: 5%;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                margin-top: 10%;
+            }
+
+            .name{
+                font-size: 25px;
+            }
+
+            .job-title{
+                font-size: 20px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            p{
+                font-size: 13px;
+            }
+
+            h5{
+                font-size: 18px;
+            }
+
+            li {
+                font-size: 14px;
+            }
+
+            footer {
+                font-size: 13px;
+            }
+        }
+
+        @media (min-width: 601px) and (max-width: 992px) {
+            .container {
+                margin-top: 7%;
+            }
+
+            .name{
+                font-size: 27px;
+            }
+
+            .job-title{
+                font-size: 22px;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+
+            p{
+                font-size: 15px;
+            }
+
+            h5{
+                font-size: 20px;
+            }
+
+            li {
+                font-size: 16px;
+            }
+
+            footer {
+                font-size: 15px;
+            }
+        }
+
+        @media (min-width: 993px) {
+            .container {
+                margin-top: 5%;
+            }
+
+            .name{
+                font-size: 28px;
+            }
+
+            .job-title{
+                font-size: 23px;
+            }
+
+            h1 {
+                font-size: 33px;
+            }
+
+            p{
+                font-size: 16px;
+            }
+
+            h5{
+                font-size: 21px;
+            }
+
+            li {
+                font-size: 17px;
+            }
+
+            footer {
+                font-size: 18px;
+            }
+        }
     </style>
 </head>
 <body>
     
     <ul class="nav justify-content-center">
         <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Profile</a>
+            <a class="nav-link disabled" aria-current="page" href="#">Profile</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="">Link</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="dashboard.html">Dashboard</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            <a class="nav-link active" href="dashboard.html">Dashboard</a>
         </li>
     </ul>
 
@@ -54,6 +154,30 @@
         <h1>Title dito</h1>
         <p>Description dito</p>
     </header>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="images/profile.jpg" alt="Your Profile Picture" class="img-fluid">
+            </div>
+            <div class="col-md-8">
+                <h2 class="name">John Smith</h2>
+                <h4 class="job-title">Full Stack Developer</h4>
+                <p>
+                Description dito
+                </p>
+                <h5>Work Experience</h5>
+                <ul>
+                <li>
+                    <strong>ABC Company</strong> - Front End Developer
+                </li>
+                <li>
+                    <strong>NASA</strong> - Back End Developer
+                </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
 
     <footer>Concordia ortum</footer>
