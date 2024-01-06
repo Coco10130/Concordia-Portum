@@ -35,6 +35,27 @@
             margin-top: 5%;
         }
 
+        .card li{
+            font-size: 12px;
+        }
+
+        .descrip{
+            font-size: 10px;
+        }
+
+        .col .card img {
+            height: 286px;
+            width: 286px;
+        }
+
+        .col .card:hover {
+            transform: scale(1.1);
+        }
+
+        .col .card {
+            transition: transform 0.3s ease-in-out;
+        }
+
         @media (max-width: 600px) {
             .container {
                 margin-top: 10%;
@@ -60,12 +81,16 @@
                 font-size: 18px;
             }
 
-            li {
+            .card li {
                 font-size: 14px;
             }
 
             footer {
                 font-size: 13px;
+            }
+
+            .card h4 {
+                font-size: 18px;
             }
         }
 
@@ -86,20 +111,28 @@
                 font-size: 30px;
             }
 
-            p{
-                font-size: 15px;
+            .card p{
+                font-size: 12px;
             }
 
             h5{
                 font-size: 20px;
             }
 
-            li {
-                font-size: 16px;
+            .card li {
+                font-size: 15px;
             }
 
             footer {
                 font-size: 15px;
+            }
+
+            .card h4{
+                font-size: 21px;
+            }
+
+            .card h5 {
+                font-size: 18px
             }
         }
 
@@ -128,8 +161,8 @@
                 font-size: 21px;
             }
 
-            li {
-                font-size: 17px;
+            .card li {
+                font-size: 15px;
             }
 
             footer {
@@ -151,36 +184,95 @@
 
 
     <header>
-        <h1>Title dito</h1>
-        <p>Description dito</p>
+        <h1>Concardia Portum</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean pharetra magna ac placerat vestibulum lectus mauris.</p>
     </header>
 
-    <div class="container mt-5">
+    <div class="container">
         <div class="row">
-            <div class="col-md-4">
-                <img src="images/profile.jpg" alt="Your Profile Picture" class="img-fluid">
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/mico2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h4 class="card-title"><strong>Magsano, Mico</strong></h4>
+                      <h5>Andriod Developer</h5>
+                      <p class="descrip">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, quis quia rerum explicabo reprehenderit quaerat fugiat, quasi minima voluptatum ex laudantium enim corrupti aliquid eligendi animi asperiores dolorem deserunt amet!</p>
+                      <h4>Work Experience</h4>
+                      <ul>
+                        <li>
+                            <strong>Flutter</strong> - Andriod Developer
+                        </li>
+                        <li>
+                            <strong>Swipe RX</strong> - Mobile Engineer
+                        </li>
+                        </ul>
+                    </div>
+                  </div>
             </div>
-            <div class="col-md-8">
-                <h2 class="name">John Smith</h2>
-                <h4 class="job-title">Full Stack Developer</h4>
-                <p>
-                Description dito
-                </p>
-                <h5>Work Experience</h5>
-                <ul>
-                <li>
-                    <strong>ABC Company</strong> - Front End Developer
-                </li>
-                <li>
-                    <strong>NASA</strong> - Back End Developer
-                </li>
-                </ul>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/emil.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h4 class="card-title"><strong>Tenepere, John Ric</strong></h4>
+                      <h5>Back End Developer</h5>
+                      <p class="descrip">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, quis quia rerum explicabo reprehenderit quaerat fugiat, quasi minima voluptatum ex laudantium enim corrupti aliquid eligendi animi asperiores dolorem deserunt amet!</p>
+                      <h4>Work Experience</h4>
+                      <ul>
+                        <li>
+                            <strong>NASA</strong> - Back End Developer
+                        </li>
+                        <li>
+                            <strong>Google</strong> - Back End Developer
+                        </li>
+                        </ul>
+                    </div>
+                  </div>
             </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/paul.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h4 class="card-title"><strong>Luna, Paul Harvey</strong></h4>
+                      <h5>Web Developer</h5>
+                      <p class="descrip">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, quis quia rerum explicabo reprehenderit quaerat fugiat, quasi minima voluptatum ex laudantium enim corrupti aliquid eligendi animi asperiores dolorem deserunt amet!</p>
+                      <h4>Work Experience</h4>
+                      <ul>
+                        <li>
+                            <strong>Amazon</strong> - Web Developer
+                        </li>
+                        <li>
+                            <strong>Google</strong> - Web Developer
+                        </li>
+                        </ul>
+                    </div>
+                  </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/jomela.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h4 class="card-title"><strong>Jovellanos, Jomel</strong></h4>
+                      <h5>UI/UX Designer</h5>
+                      <p class="descrip">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, quis quia rerum explicabo reprehenderit quaerat fugiat, quasi minima voluptatum ex laudantium enim corrupti aliquid eligendi animi asperiores dolorem deserunt amet!</p>
+                      <h4>Work Experience</h4>
+                      <ul>
+                        <li>
+                            <strong>Google</strong> - UI/UX Designer
+                        </li>
+                        <li>
+                            <strong>Nike</strong> - UI/UX Designer
+                        </li>
+                        </ul>
+                    </div>
+                  </div>
+            </div>
+            
         </div>
     </div>
 
 
-    <footer>Concordia ortum</footer>
+
+    <footer>Concordia Portum</footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" 
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" 
